@@ -17,7 +17,7 @@ Dependenties - only two external libraries:
 npm i @loadable/component lodash
 ```
 
-2 Create a component
+2. Create a component
 
 ```javascript
 import { Link } from "gatsby";
