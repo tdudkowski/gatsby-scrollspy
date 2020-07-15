@@ -34,9 +34,9 @@ export default ToC;
 
 ## Defaults
 
-Script is looking for container with class name "content-container" and H3 tags inside. Active class "currentInnerAnchor". All names are easy to find and change.
+Script is looking for container with class name "content-container" and H3 tags inside. Active class is named "currentInnerAnchor". All names are easy to find and change.
 
-Best way to create anchors in them is plugin gatsby-remark-autolink-headers, and set in gatsby-config.js:
+Best tool to create anchors in headers automatically is plugin gatsby-remark-autolink-headers, and this setting in gatsby-config.js:
 
 ```javascript
 {
