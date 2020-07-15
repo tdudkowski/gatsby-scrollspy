@@ -20,8 +20,7 @@ const Automenu = () => {
       for (let i = 0; i < H3List.length; i++) {
         hrefs.push(H3List[i].id);
         titles.push(H3List[i].textContent);
-      }
-      console.log(H3List);
+      }      
       scrollSpy(H3List);
     } catch (e) {
       return;
@@ -66,7 +65,7 @@ const Automenu = () => {
     <ul className="automenu">
       {hrefs.map((href, i) => (
         <li key={i}>
-          <Link to={"#" + href}>{titles[i]}</Link>
+          <a href={"#" + href}>{titles[i]}</a>
         </li>
       ))}
     </ul>
