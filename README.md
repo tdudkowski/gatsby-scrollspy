@@ -4,7 +4,7 @@
 
 Simple, automated scrollspy. Gets the data from content container in page, and then having hrefs and titles creating from them inner menu, working ToC, in form of component. This component can be placed anywhere in the layout.
 
-Dependend on two external libraries:
+Dependenties - only two external libraries:
 
 - [Loadable Components](https://loadable-components.com)
 - [Lodash](https://lodash.com)
@@ -34,7 +34,7 @@ export default ToC;
 
 ## Defaults
 
-Script is looking for container with class name "content-container" and H3 tags inside. Active class is named "currentInnerAnchor". All names are easy to find and change.
+By default should be placed in /components. Script is looking for container with class name "content-container" and H3 tags inside. Active class is named "currentInnerAnchor". All names are easy to find and change.
 
 Best tool to create anchors in headers automatically is plugin gatsby-remark-autolink-headers, and this setting in gatsby-config.js:
 
