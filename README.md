@@ -2,7 +2,9 @@
 
 ## Description
 
-Simple, automated scrollspy. Gets the data from content container in page, and then having hrefs and titles creating from them inner menu, working ToC, in form of component. This component can be placed anywhere in the layout.
+Simple, automated scrollspy. Gets the data from content container in page, and then having hrefs (ids) and titles creating from them inner menu, working ToC, in form of component. This component can be placed anywhere in the layout.
+
+In JSX you should write id at every header. MDX is full automatic, just use plugin described at the oend of this file.
 
 Dependenties - only two external libraries:
 
@@ -11,13 +13,13 @@ Dependenties - only two external libraries:
 
 ## HOWTO
 
-1. Install dependencies
+1. Install dependencies, no need to change gatsby-config.js
 
 ```bash
 npm i @loadable/component lodash
 ```
 
-2. Create a component
+2. Place automenu.js at /components, and create a component:
 
 ```javascript
 import { Link } from "gatsby";
@@ -30,13 +32,14 @@ const ToC = () => <Scrollspy />;
 export default ToC;
 ```
 
-3. Profit
+3. Run and profit, no config file was changed, so there's no need for restart, ctrl+r is enough.
 
 ## Defaults
 
-By default should be placed in /components. Script is looking for container with class name "content-container" and H3 tags inside. Active class is named "currentInnerAnchor". All names are easy to find and change.
+- By default automenu.js and component file should be placed in /components.
+- Script is looking for container with class name "content-container" and H3 tags inside. Active class is named "currentInnerAnchor". All names are easy to find and change.
 
-Best tool to create anchors in headers automatically is plugin gatsby-remark-autolink-headers, and this setting in gatsby-config.js:
+MDX: best tool to create anchors in headers automatically is plugin gatsby-remark-autolink-headers, and this setting in gatsby-config.js:
 
 ```javascript
 {
@@ -47,4 +50,4 @@ Best tool to create anchors in headers automatically is plugin gatsby-remark-aut
           `gatsby-remark-autolink-headers`,
 ```
 
-It should work after restarting. In case of problems pm me.
+In case of problems pm me.
