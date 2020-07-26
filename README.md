@@ -2,9 +2,9 @@
 
 ## Description
 
-Simple, automated scrollspy. Gets the data from content container in page, and then having hrefs (ids) and titles creating from them inner menu, working ToC, in form of component. This component can be placed anywhere in the layout.
+Simple, automated scrollspy. Gets the data from content container in page, and then having hrefs (ids) and titles creates from them inner menu, working ToC, in form of component. This component can be placed anywhere in the layout.
 
-In JSX you should write id at every header. MDX is full automatic, just use plugin described at the oend of this file.
+In JSX you should write id at every header. MDX is full automatic, just use plugin described at the end of this file.
 
 Dependenties - only two external libraries:
 
@@ -39,7 +39,7 @@ export default ToC;
 - By default automenu.js and component file should be placed in /components.
 - Script is looking for container with class name "content-container" and H3 tags inside. Active class is named "currentInnerAnchor". All names are easy to find and change.
 
-MDX: best tool to create anchors in headers automatically is plugin gatsby-remark-autolink-headers, and this setting in gatsby-config.js:
+MDX: best tool to create anchors in headers automatically is plugin [https://www.gatsbyjs.org/packages/gatsby-remark-autolink-headers/](gatsby-remark-autolink-headers), and this setting in gatsby-config.js:
 
 ```javascript
 {
