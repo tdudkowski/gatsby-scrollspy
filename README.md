@@ -39,7 +39,7 @@ export default ToC;
 - By default automenu.js and component file should be placed in /components.
 - Script is looking for container with class name "content-container" and H3 tags inside. Active class is named "currentInnerAnchor". All names are easy to find and change.
 
-MDX: best tool to create anchors in headers automatically is plugin [https://www.gatsbyjs.org/packages/gatsby-remark-autolink-headers/](gatsby-remark-autolink-headers), and this setting in gatsby-config.js:
+MDX: best tool to create anchors in headers automatically is plugin [gatsby-remark-autolink-headers](https://www.gatsbyjs.org/packages/gatsby-remark-autolink-headers/), and this setting in gatsby-config.js:
 
 ```javascript
 {
